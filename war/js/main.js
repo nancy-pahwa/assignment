@@ -51,12 +51,12 @@ mainApp.controller("formctrl",function($scope,$location,userdatastore){
 	$scope.submit=function()
 	{
 		console.log("Hello");
-		//$scope.submitted=true;
-		/*if($scope.newForm.$invalid){
+		$scope.submitted=true;
+		if($scope.newForm.$invalid){
 
 			console.log($scope);
 			return;
-		}*/
+		}
 		$scope.userData.username = $scope.username;
 		$scope.userData.password = $scope.password;
 		$scope.userData.passwordCompare = $scope.passwordCompare;
